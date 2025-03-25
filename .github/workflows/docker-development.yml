@@ -40,9 +40,3 @@ jobs:
         run: |
             docker push ammbopp/472-s-golden-pillow-frontend-6510451123:latest
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-            name: Release ${{ env.TAG }}
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
